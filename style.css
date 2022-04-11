@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.719);
+  padding: 0.9rem;
+  border-radius: 15px;
+  max-width: 19rem;
+  color: white;
+}
+
+fieldset {
+  border: 3px solid dodgerblue;
+}
+
+legend{
+  border: 1px solid dodgerblue;
+  padding: .625rem;
+  text-align: center;
+  background-color: dodgerblue;
+  border-radius: 9px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  width: 100%;
+  letter-spacing: 2px;
+  
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -1.25rem;
+  font-size: 0.75rem;
+  color: dodgerblue;
+}
+
+.inputUser:focus ~ .labelInput,
+
+
+#date_birth {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#submit {
+  background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(83, 35, 196));
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, rgb(17, 122, 182), rgb(47, 24, 128));
+  
+}

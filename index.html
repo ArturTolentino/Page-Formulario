@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Formulário de inscrição</b></legend>
+          <br />
+          <!-- Informações pessoais -->
+          <div class="inputBox">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="inputUser"
+              required
+              autocomplete="none"
+            />
+            <label for="name" class="labelInput">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputUser"
+              required
+              autocomplete="none"
+            />
+            <label for="email" class="labelInput">Email</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              class="inputUser"
+              required
+              autocomplete="none"
+            />
+            <label for="number" class="labelInput">CPF</label>
+          </div>
+
+          <!-- Área de interesse -->
+          <p>Qual área você tem interesse.</p>
+          <input
+            type="radio"
+            id="frontEnd"
+            name="aplication"
+            value="frontEnd"
+            required
+          />
+          <label for="frontEnd">FrontEnd</label>
+          <br />
+          <input
+            type="radio"
+            id="backEnd"
+            name="aplication"
+            value="backEnd"
+            required
+          />
+          <label for="backEnd">BackEnd</label>
+          <br />
+          <input
+            type="radio"
+            id="fullStack"
+            name="aplication"
+            value="fullStack"
+            required
+          />
+          <label for="fullStack">FullStack</label>
+
+          <br />
+          <br />
+          <br />
+          <!-- Data de Nascimento-->
+
+          <label for="date_birth"><b>Data de nascimento</b></label>
+          <input type="date" name="date_birth" id="date_birth" required />
+
+          <br /><br />
+          <!-- Informações de local -->
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="contact"
+              id="contact"
+              class="inputUser"
+              required
+              autocomplete="none"
+            />
+            <label for="contact" class="labelInput">Numero de celular</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="estado"
+              id="estado"
+              class="inputUser"
+              required
+              autocomplete="none"
+            />
+            <label for="estado" class="labelInput">Estado</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              class="inputUser"
+              required
+            />
+            <label for="endereco" class="labelInput">Endereço</label>
+          </div>
+          <br /><br />
+
+          <!-- Botão -->
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
